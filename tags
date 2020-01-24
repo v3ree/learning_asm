@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+SECTION	01_hello_world.asm	/^SECTION .data$/;"	l
+SECTION	01_hello_world.asm	/^SECTION .text$/;"	l
+SECTION	02_hello_world_include_lib.asm	/^SECTION .data$/;"	l
+SECTION	02_hello_world_include_lib.asm	/^SECTION .text$/;"	l
+SECTION	03_hello_world_args.asm	/^SECTION .data$/;"	l
+SECTION	03_hello_world_args.asm	/^SECTION .text$/;"	l
+SECTION	04_hello_world_input.asm	/^SECTION .bss$/;"	l
+SECTION	04_hello_world_input.asm	/^SECTION .data$/;"	l
+SECTION	04_hello_world_input.asm	/^SECTION .text$/;"	l
+SECTION	05_counting_to19.asm	/^SECTION .data$/;"	l
+SECTION	05_counting_to19.asm	/^SECTION .text$/;"	l
+SECTION	06_counting_improved.asm	/^SECTION .bss$/;"	l
+SECTION	06_counting_improved.asm	/^SECTION .data$/;"	l
+SECTION	06_counting_improved.asm	/^SECTION .text$/;"	l
+SECTION	07_basic_calculator.asm	/^SECTION .bss$/;"	l
+SECTION	07_basic_calculator.asm	/^SECTION .data$/;"	l
+SECTION	07_basic_calculator.asm	/^SECTION .text$/;"	l
+SECTION	math_lib0.asm	/^SECTION .text$/;"	l
+SECTION	str_lib0.asm	/^SECTION .bss$/;"	l
+SECTION	str_lib0.asm	/^SECTION .text$/;"	l
+_start	01_hello_world.asm	/^_start:$/;"	l
+_start	02_hello_world_include_lib.asm	/^_start:$/;"	l
+_start	03_hello_world_args.asm	/^_start:$/;"	l
+_start	04_hello_world_input.asm	/^_start:$/;"	l
+_start	05_counting_to19.asm	/^_start:$/;"	l
+_start	06_counting_improved.asm	/^_start:$/;"	l
+_start	07_basic_calculator.asm	/^_start:$/;"	l
+calculate	07_basic_calculator.asm	/^calculate:$/;"	l
+check_minus	07_basic_calculator.asm	/^check_minus:$/;"	l
+check_neg_bit	math_lib0.asm	/^check_neg_bit:                      ; checks if the integer from eax has neg sign$/;"	l
+count	05_counting_to19.asm	/^count:$/;"	l
+count_char	01_hello_world.asm	/^count_char:$/;"	l
+count_to_number	06_counting_improved.asm	/^count_to_number:                    ; counts to number in eax$/;"	l
+err_int	06_counting_improved.asm	/^    err_int db      " is invalid input - please use non-negative integer!"$/;"	d
+error_div	07_basic_calculator.asm	/^    error_div   db      "Error - cannot divide by 0!", 0x00$/;"	d
+error_int	07_basic_calculator.asm	/^    error_int   db      "Error - invalid integer!", 0x00$/;"	d
+error_op	07_basic_calculator.asm	/^    error_op    db      "Error - invalid operation!", 0x00$/;"	d
+error_pow	07_basic_calculator.asm	/^    error_pow   db      "Error - cannot raise to negative power!", 0x00$/;"	d
+error_sqrt	07_basic_calculator.asm	/^    error_sqrt  db      "Error - cannot take square root of negative integer!", 0x00$/;"	d
+exit	01_hello_world.asm	/^exit:$/;"	l
+exit	str_lib0.asm	/^exit:$/;"	l
+factorial	math_lib0.asm	/^factorial:                          ; eax for input and output$/;"	l
+get_str_len	01_hello_world.asm	/^get_str_len:                ; string address is in eax$/;"	l
+get_str_len	str_lib0.asm	/^get_str_len:                    ; string address is in eax, returns lenth in eax$/;"	l
+int_to_str	str_lib0.asm	/^int_to_str:                     ; convert int (eax) to str (ebx holds buf addr)$/;"	l
+is_even	math_lib0.asm	/^is_even:                            ; number is in eax, result returned in eax$/;"	l
+print_args	03_hello_world_args.asm	/^print_args:$/;"	l
+print_int	str_lib0.asm	/^print_int:                      ; prints the integer from eax$/;"	l
+print_neg_char	str_lib0.asm	/^print_neg_char:$/;"	l
+print_newline_char	str_lib0.asm	/^print_newline_char:$/;"	l
+print_sig_int	str_lib0.asm	/^print_sig_int:                  ; prints the integer from eax$/;"	l
+print_str	str_lib0.asm	/^print_str:                      ; prints the string with address in eax$/;"	l
+raise_to_power	math_lib0.asm	/^raise_to_power:                     ; if error return ecx = -1, ecx = 0 if ok$/;"	l
+read_input	str_lib0.asm	/^read_input:                     ; reads input in variable from eax$/;"	l
+remainder	07_basic_calculator.asm	/^    remainder   db      " R ", 0x00$/;"	d
+remove_nl_char	str_lib0.asm	/^remove_nl_char:                 ; removes new line char from end of string in eax$/;"	l
+reverse_string	str_lib0.asm	/^reverse_string:                 ; takes string in eax$/;"	l
+save_str_len	01_hello_world.asm	/^save_str_len:               ; calculate the string length$/;"	l
+skip_tens	05_counting_to19.asm	/^skip_tens:$/;"	l
+space	06_counting_improved.asm	/^    space   db      " ", 0x00$/;"	d
+square_root	math_lib0.asm	/^square_root:                        ; returns -1 if invalid negative number$/;"	l
+str0	04_hello_world_input.asm	/^    str0    db      "Please write your name: ", 0x00$/;"	d
+str0	05_counting_to19.asm	/^    str0    db      `Counting to 10:\\n\\0`$/;"	d
+str0	06_counting_improved.asm	/^    str0    db      "Give me a number: ", 0x00$/;"	d
+str1	01_hello_world.asm	/^    str1    db      "Hello, cruel world!", 0x0A, 0x00$/;"	d
+str1	02_hello_world_include_lib.asm	/^    str1    db      `Hello, cruel world!\\n\\0`$/;"	d
+str1	03_hello_world_args.asm	/^    str1    db      `Hello, cruel world!\\n\\0`$/;"	d
+str1	04_hello_world_input.asm	/^    str1    db      "Hello, ", 0x00$/;"	d
+str1	06_counting_improved.asm	/^    str1    db      "Counting to ", 0x00$/;"	d
+str2	01_hello_world.asm	/^    str2    db      "How are you today?", 0x0A, 0x00$/;"	d
+str2	02_hello_world_include_lib.asm	/^    str2    db      `Look on my works, ye mighty, and despair!\\n\\0`$/;"	d
+str2	03_hello_world_args.asm	/^    str2    db      `Look on my works, ye mighty, and despair!\\n\\0`$/;"	d
+str2	06_counting_improved.asm	/^    str2    db      ": ", 0x00$/;"	d
+str_print	01_hello_world.asm	/^str_print:                  ; prints the string with address in eax$/;"	l
+str_to_int	str_lib0.asm	/^str_to_int:                      ; convert string (eax addr) to integer (in eax)$/;"	l
+tens	05_counting_to19.asm	/^tens:$/;"	l
+usage	07_basic_calculator.asm	/^usage:                              ; print the usage string and exit$/;"	l
+usage_msg	07_basic_calculator.asm	/^    usage_msg   db      "Usage (as program argument): (-)<integer> <operation (+ - x \/ pow sqrt fact)> (-)<integer>", 0x00$/;"	d
+valid_int_string	str_lib0.asm	/^valid_int_string:                   ; check if string [eax] is a valid int format$/;"	l
+validate_int	07_basic_calculator.asm	/^validate_int:$/;"	l
+validate_op	07_basic_calculator.asm	/^validate_op:$/;"	l
